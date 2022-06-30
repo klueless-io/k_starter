@@ -1,3 +1,11 @@
+## [0.1.2](https://github.com/klueless-io/k_starter/compare/v0.1.1...v0.1.2) (2022-06-30)
+
+
+### Bug Fixes
+
+* remove tty-config ([37beabd](https://github.com/klueless-io/k_starter/commit/37beabd97f3f2dbaa3a2b7f7389ae76f5cbb859f))
+* remove tty-config ([559be35](https://github.com/klueless-io/k_starter/commit/559be35701a51fa0c321613a878f8024443248fc))
+
 ## [0.1.1](https://github.com/klueless-io/k_starter/compare/v0.1.0...v0.1.1) (2022-06-30)
 
 
