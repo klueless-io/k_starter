@@ -54,7 +54,7 @@ Gem::Specification.new do |spec|
   # spec.add_dependency 'tty-box',         '~> 0.5.0'
   # spec.add_dependency 'tty-color',       '~> 0.5'
   # spec.add_dependency 'tty-command',     '~> 0.9.0'
-  spec.add_dependency 'tty-config',      '~> 0.5'
+  # spec.add_dependency 'tty-config',      '~> 0.5'
   # spec.add_dependency 'tty-cursor',      '~> 0.7'
   spec.add_dependency 'tty-editor',      '~> 0.7'
   # spec.add_dependency 'tty-file',        '~> 0.8.0'
