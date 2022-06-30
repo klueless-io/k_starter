@@ -42,7 +42,7 @@ See all [usage examples](./USAGE.md)
 Checkout the repo
 
 ```bash
-git clone 
+git clone https://github.com/klueless-io/k_starter
 ```
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. 
