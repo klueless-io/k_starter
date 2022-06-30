@@ -11,6 +11,20 @@ AllCops:
     - ".builders/**/*"
     - "spec/samples/**/*"
 
+Metrics/AbcSize:
+  Exclude:
+    - "lib/**/questions/**/*"
+    - "lib/**/commands/**/*"
+    - "lib/**/r7_hotwire.rb"
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - "lib/**/r7_hotwire.rb"
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - "lib/**/r7_hotwire.rb"
+
 Metrics/BlockLength:
   Exclude:
     - "**/spec/**/*"
