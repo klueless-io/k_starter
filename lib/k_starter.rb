@@ -4,7 +4,6 @@ require 'pry'
 
 require 'json'
 require 'dry-struct'
-require 'tty-config'
 require 'tty-prompt'
 require 'tty-table'
 require 'k_util'
