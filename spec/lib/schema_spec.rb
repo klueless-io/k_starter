@@ -59,7 +59,7 @@ RSpec.describe 'Schema' do
     describe '#expanded_project_path' do
       subject { instance.expanded_project_path }
 
-      it { is_expected.to start_with('/User').and end_with('/some_root/some_project') }
+      it { is_expected.to start_with('/').and end_with('/some_root/some_project') }
     end
 
     describe '#root_path' do
@@ -71,7 +71,7 @@ RSpec.describe 'Schema' do
     describe '#expanded_root_path' do
       subject { instance.expanded_root_path }
 
-      it { is_expected.to start_with('/User').and end_with('/some_root') }
+      it { is_expected.to start_with('/').and end_with('/some_root') }
     end
 
     describe '#github_account_type' do
