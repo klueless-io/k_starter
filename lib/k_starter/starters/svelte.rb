@@ -37,6 +37,7 @@ module KStarter
         end
 
         system_in_root(script)
+        system_in_project('npm install')
       end
 
       def script

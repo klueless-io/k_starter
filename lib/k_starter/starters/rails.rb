@@ -11,19 +11,19 @@ module KStarter
       end
 
       def execute
-        script
+        # script
       end
 
       private
 
-      def script
-        <<-BASH
+      # def script
+      #   <<-BASH
 
-        cd #{data.root_path}
-        npx degit sveltejs/template #{data.name}
+      #   cd #{data.root_path}
+      #   npx degit sveltejs/template #{data.name}
 
-        BASH
-      end
+      #   BASH
+      # end
     end
   end
 end
