@@ -19,26 +19,51 @@
 module KStarter
   module Starters
     # Generate command line for a new ruby gem project.
-    class Svelte
-      attr_reader :data
-
-      def initialize(data)
-        @data = data
-      end
-
+    class Svelte < KStarter::Starters::Base
       def execute
-        script
+        create_app
+        create_kbuilder
+
+        project_open_in_vscode
       end
 
       private
 
+      def create_app
+        if project_path_exist?
+          return exiting            if ask_exit_if_project_exists
+
+          project_path_delete       if ask_destroy_existing_project
+        end
+
+        system_in_root(script)
+      end
+
       def script
         <<-BASH
 
-        cd #{data.root_path}
-        npx degit sveltejs/template #{data.name}
+        echo "Generating gem project #{project.name}..."
+        echo "Current folder: "
+        pwd
+
+        #{genesis_vite}
 
         BASH
+      end
+
+      # Alternate technique
+      def genesis_sveltekit
+        "npm create svelte #{project.name}"
+      end
+
+      # This is the current technique
+      def genesis_vite
+        "npm init vite #{project.name}"
+      end
+
+      # deprecated (use vite or sveltekit)
+      def genesis_degit
+        "npx degit sveltejs/template #{project.name}"
       end
     end
   end

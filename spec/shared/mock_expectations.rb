@@ -182,7 +182,7 @@ RSpec.shared_examples :expected_data_svelte_project do
       name: 'my_first_svelte_app',
       type: :svelte,
       variant: nil,
-      root_path: '~/dev/tut_js',
+      root_path: '~/dev/tut-js',
       description: 'this is my first svelte application',
       github_key: 'klueless-io',
       story: include(
@@ -206,7 +206,7 @@ RSpec.shared_examples :expected_data_nuxt_project do
       name: 'my_first_nuxt_app',
       type: :nuxt,
       variant: nil,
-      root_path: '~/dev/tut_js',
+      root_path: '~/dev/tut-js',
       description: 'this is my first nuxt application',
       github_key: 'klueless-io',
       story: include(

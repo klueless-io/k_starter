@@ -115,7 +115,7 @@ shared_context :mock_inputs do
     {
       name: 'my_first_svelte_app',
       type: :svelte,
-      root_path: '~/dev/tut_js',
+      root_path: '~/dev/tut-js',
       description: 'this is my first svelte application',
       github_key: 'klueless-io',
       story: data_story,
@@ -127,7 +127,7 @@ shared_context :mock_inputs do
     {
       name: 'my_first_nuxt_app',
       type: :nuxt,
-      root_path: '~/dev/tut_js',
+      root_path: '~/dev/tut-js',
       description: 'this is my first nuxt application',
       github_key: 'klueless-io',
       story: data_story,
