@@ -14,8 +14,6 @@ module KStarter
         # script
       end
 
-      private
-
       # def script
       #   <<-BASH
 
