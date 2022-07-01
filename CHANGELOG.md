@@ -1,3 +1,11 @@
+## [0.1.4](https://github.com/klueless-io/k_starter/compare/v0.1.3...v0.1.4) (2022-07-01)
+
+
+### Bug Fixes
+
+* support for sveltekit and svelte via vite ([2a77778](https://github.com/klueless-io/k_starter/commit/2a77778dc6a19bd75a8a8f7ee8b04e591400099f))
+* support for sveltekit and svelte via vite ([afe0dc0](https://github.com/klueless-io/k_starter/commit/afe0dc097eebd6a24e96ed8cf39c739adf6e1d87))
+
 ## [0.1.3](https://github.com/klueless-io/k_starter/compare/v0.1.2...v0.1.3) (2022-07-01)
 
 
