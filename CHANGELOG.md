@@ -1,3 +1,10 @@
+## [0.1.3](https://github.com/klueless-io/k_starter/compare/v0.1.2...v0.1.3) (2022-07-01)
+
+
+### Bug Fixes
+
+* update svelte support ([0029cfb](https://github.com/klueless-io/k_starter/commit/0029cfbedc6c45b5b480dc3208f48caee4d0d753))
+
 ## [0.1.2](https://github.com/klueless-io/k_starter/compare/v0.1.1...v0.1.2) (2022-06-30)
 
 
