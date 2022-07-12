@@ -39,6 +39,7 @@ module KStarter
         @question ||= prompt
       end
 
+      # kweb10_devise
       def ask_root_path
         project_type_config = App.config.get_project_type(type, variant)
         configured_path = project_type_config.nil? ? '~/unknown_project' : project_type_config[:path]
@@ -130,11 +131,13 @@ module KStarter
         return klue_template_name unless klue_template_name.nil?
 
         case type
-        when :rails, :svelte, :nuxt3
-          return type.to_s
+        when :rails
+          return 'rails_app'
         when :gem
           # return variant == :library ? 'ruby_gem' : 'ruby_gem_cli'
           return 'ruby_gem'
+        when :svelte, :nuxt3
+          return type.to_s
         end
         nil
       end

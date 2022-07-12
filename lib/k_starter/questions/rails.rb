@@ -14,7 +14,7 @@ module KStarter
       attr_reader :run_db_migrate
 
       def initialize(**args)
-        args = { type: 'rails' }.merge(args)
+        args = { type: :rails }.merge(args)
         super(**args)
       end
 

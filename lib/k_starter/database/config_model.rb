@@ -88,10 +88,11 @@ module KStarter
         variant = as_sym(variant)
 
         @data[:project_types].find_index { |t| t[:type]&.to_sym == type && (variant.nil? || t[:variant]&.to_sym == variant) }
+        # @data[:project_types].find_index { |t| t[:type]&.to_sym == type }
       end
 
       def as_sym(value)
-        value.to_sym if value.is_a?(String)
+        return value.to_sym if value.is_a?(String)
         value
       end
     end

@@ -56,6 +56,7 @@ module KStarter
       if options[:help]
         invoke :help, ['project']
       else
+        system('ruby -v')
         KStarter::Commands::ProjectMenu.new(subcommand, options).execute
       end
     end
