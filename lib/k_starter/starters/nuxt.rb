@@ -3,13 +3,7 @@
 module KStarter
   module Starters
     # Generate command line for a new ruby gem project.
-    class Nuxt
-      attr_reader :data
-
-      def initialize(data)
-        @data = data
-      end
-
+    class Nuxt < KStarter::Starters::Base
       def execute
         script
       end
@@ -19,8 +13,8 @@ module KStarter
       def script
         <<-BASH
 
-        cd #{data.root_path}
-        npx nuxi init #{data.name}
+        cd #{project.root_path}
+        npx nuxi init #{project.name}
 
         BASH
       end

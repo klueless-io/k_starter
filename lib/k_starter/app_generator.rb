@@ -40,6 +40,10 @@ module KStarter
     #   @host = host
     # end
 
+    def initialize(*args)
+      super(args)
+    end
+
     #   private
 
     #   def gac(message)
